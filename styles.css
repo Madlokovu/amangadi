@@ -1,0 +1,44 @@
+*{
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+
+    font-family: Arial, sans-serif;
+    color: whitesmoke;
+    background-image: url(./images/dice.jpg);
+    padding: 20px;
+}
+
+.family-tree {
+    display: flex;
+    flex-direction: column;
+}
+
+.person {
+    margin: 10px 0;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column; /* Stack spouse and children vertically */
+    align-items: flex-start; /* Align items to the left */
+}
+.spouse {
+    margin-left: 20px; /* Adjust this value for the desired indentation */
+}
+
+
+.children {
+    padding-left: 40px; /* Indent children */
+    display: none;
+}
+
+
+.name, .spouse {
+    display: flex;
+    align-items: center;
+}
+
+.name i, .spouse i {
+    margin-right: 5px; /* Adds space between the icon and name */
+    color: #007BFF; /* Change color of the icon */
+}

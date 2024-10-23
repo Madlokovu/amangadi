@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Tree</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .spouse, .children {
+            display: none; /* Initially hide spouse and children */
+        }
+    </style>
+</head>
+<body>
+    <div class="family-tree">
+        <div class="person" onclick="toggleChildren(event, this)">
+            <div class="name"><i class="fa-solid fa-chess-king"></i> Siholoza</div>
+            <div class="spouse"><i class="fa-regular fa-chess-queen"></i> MaMajozi</div>
+            <div class="children">
+                <div class="person" onclick="toggleChildren(event, this)">
+                    <div class="name"><i class="fa-solid fa-chess-king"></i> Mcebi</div>
+                    <div class="spouse"><i class="fa-regular fa-chess-queen"></i>  Magasa</div>
+                    <div class="children">
+                        <div class="person" onclick="toggleChildren(event, this)">
+                            <div class="name"><i class="fa-solid fa-person"></i> Saybamba</div>
+                            <div class="spouse"><i class="fa-solid fa-person-dress"></i> MaMbeje</div>
+                            <div class="children">
+                                <div class="person" onclick="toggleChildren(event, this)">
+                                    <div class="name"><i class="fa-solid fa-person"></i> Mqanjelwa</div>
+                                    <div class="spouse"><i class="fa-solid fa-person-dress"></i> MaShabalala</div>
+                                    <div class="children">
+                                        <div class="person" onclick="toggleChildren(event, this)">
+                                            <div class="name"><i class="fa-solid fa-person-dress"></i> Bonisiwe</div>
+                                            <div class="name"><i class="fa-solid fa-person-dress"></i> Phumelele</div>
+                                            <div class="name"><i class="fa-solid fa-person"></i> Bongani</div>
+                                            <div class="name"><i class="fa-solid fa-person-dress"></i> Simoni</div>
+                                            <div class="name"><i class="fa-solid fa-person"></i>Lungisani</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="person" onclick="toggleChildren(event, this)">
+                                    <div class="name"><i class="fa-solid fa-person"></i> Msongelwa</div>
+                                    <div class="spouse"><i class="fa-solid fa-person-dress"></i> Magwala</div>
+                                    <div class="children">
+                                        <div class="person" onclick="toggleChildren(event, this)">
+                                            <div class="name"><i class="fa-solid fa-person-dress"></i> Slindile</div>
+                                            <div class="name"><i class="fa-solid fa-person"></i> Mabandla</div>
+                                            <div class="name"><i class="fa-solid fa-person"></i>Khumbulani</div>
+                                            <div class="name"><i class="fa-solid fa-person-dress"></i> Thandeka</div>
+                                            <div class="name"><i class="fa-solid fa-person-dress"></i> Thandekile</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+
+                                <div class="person" onclick="toggleChildren(event, this)">
+                                    <div class="name"><i class="fa-solid fa-person"></i>Funizwe
+                                        <div class="children">
+                                            <div class="person" onclick="toggleChildren(event, this)">
+                                                <div class="name"><i class="fa-solid fa-person-dress"></i>MaKhanyile
+                                                    <div class="children">
+                                                        <div class="person" onclick="toggleChildren(event, this)">
+                                                            <div class="name"><i class="fa-solid fa-person"></i> Sthandeni</div>
+                                                            <div class="name"><i class="fa-solid fa-person"></i> Sakhile</div>
+                                                            <div class="name"><i class="fa-solid fa-person"></i>Bonginkosi</div>
+                                                            <div class="name"><i class="fa-solid fa-person"></i> Sthandeni</div>
+                                                            <div class="name"><i class="fa-solid fa-person"></i>Mtungani</div>
+                                                            <div class="name"><i class="fa-solid fa-person"></i> Zamokwakhe</div>
+                                                      
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+        
+                                            <!--Wife 2-->
+                                            <div class="person" onclick="toggleChildren(event, this)">
+                                                <div class="name"><i class="fa-solid fa-person-dress"></i> MaTshezi
+                                                    <div class="children">
+                                                        <div class="person" onclick="toggleChildren(event, this)">
+                                                            <div class="name"><i class="fa-solid fa-person"></i> Ayanda</div>
+                                                            <div class="name"><i class="fa-solid fa-person"></i> Ntokozo</div>
+                                                            <div class="name"><i class="fa-solid fa-person-dress"></i> Zinhle</div>
+                                                            <div class="name"><i class="fa-solid fa-person-dress"></i> Smangele</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                           
+                                        </div>
+                                    </div>                                 
+                                </div>
+
+
+                                
+                                
+
+
+
+                                <div class="person" onclick="toggleChildren(event, this)">
+                                    <div class="name"><i class="fa-solid fa-person"></i> Bantubakhona ("Qhushe")</div>
+                                    <div class="spouse"><i class="fa-solid fa-person-dress"></i> MaShangase</div>
+                                    <div class="children">
+                                        <div class="person" onclick="toggleChildren(event, this)">
+                                            <div class="name"><i class="fa-solid fa-person-dress"></i> Ntombikayise ("Lulu")</div>
+                                            <div class="name"><i class="fa-solid fa-person"></i> Ndabzekwayo ("Ndaba")</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="person" onclick="toggleChildren(event, this)">
+                                    <div class="name"><i class="fa-solid fa-person"></i>Fanyana</div>
+                                    <div class="spouse"><i class="fa-solid fa-person-dress"></i> MaKhuzwayo</div>
+                                    <div class="children">
+                                        <div class="person" onclick="toggleChildren(event, this)">
+                                            <div class="name"><i class="fa-solid fa-person-dress"></i> Nomkhosi ("Nana")</div>
+                                            <div class="name"><i class="fa-solid fa-person"></i> Musawenkosi ("Musa")</div>
+                                            <div class="name"><i class="fa-solid fa-person-dress"></i> Nokwazi</div>
+                                            <div class="name"><i class="fa-solid fa-person"></i>Simangaye ("Jimmy")</div>
+                                            <div class="name"><i class="fa-solid fa-person"></i> Mneliswa</div>
+                                            <div class="name"><i class="fa-solid fa-person"></i>Mukelani</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="person" onclick="toggleChildren(event, this)">
+                                    <div class="name"><i class="fa-solid fa-person-dress"></i> Sizeni</div>
+                                    <div class="children">
+                                        <div class="person" onclick="toggleChildren(event, this)">
+                                            <div class="name"><i class="fa-solid fa-person"></i> Mbongiseni Dlamuka</div>
+                                            <div class="name"><i class="fa-solid fa-person"></i> Jabulani Dlamuka</div>
+                                            <div class="name"><i class="fa-solid fa-person"></i> Khulakani "Mhle" Dlamuka</div>
+                                            <div class="name"><i class="fa-solid fa-person-dress"></i> Makhosazane Dlamuka</div>
+                                            <div class="name"><i class="fa-solid fa-person-dress"></i> Zanele Dlamuka</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <!--New family Branch-->
+                        <div class="person" onclick="toggleChildren(event, this)">
+                            <div class="name"><i class="fa-solid fa-person"></i> Ndoda</div>
+                            <div class="spouse"><i class="fa-solid fa-person-dress"></i> MaNgubane</div>
+                            <div class="children">
+                                <div class="person" onclick="toggleChildren(event, this)">
+                                    <div class="name"><i class="fa-solid fa-person-dress"></i> Bongekile</div>
+                                    <div class="name"><i class="fa-solid fa-person-dress"></i> Felani</div>
+                                    <div class="name"><i class="fa-solid fa-person"></i> Ngwegwe</div>
+                                    <div class="spouse"><i class="fa-solid fa-person-dress"></i> Mamlindeli
+                                        <div class="children">
+                                            <div class="person" onclick="toggleChildren(event, this)">
+                                                <div class="name"><i class="fa-solid fa-person-dress"></i> Qondekile</div>
+                                                <div class="name"><i class="fa-solid fa-person"></i> Qalokunye</div>
+                                                <div class="name"><i class="fa-solid fa-person"></i>Qalawazi</div>
+                                                <div class="name"><i class="fa-solid fa-person-dress"></i>Zothini</div>
+                                                <div class="name"><i class="fa-solid fa-person"></i>Mhlekiswa</div>
+                                                <div class="name"><i class="fa-solid fa-person"></i>Somandla</div>
+                                                <div class="name"><i class="fa-solid fa-person"></i>Phelelani</div>
+                                                <div class="name"><i class="fa-solid fa-person"></i>Delongazi</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="name"><i class="fa-solid fa-person-dress"></i> Thayimile</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--New family Branch-->
+
+                        <!--New family Branch-->
+                        <div class="person" onclick="toggleChildren(event, this)">
+                            <div class="name"><i class="fa-solid fa-person"></i> Momo</div>
+                            <div class="spouse"><i class="fa-solid fa-person-dress"></i> MaGumede</div>
+                            <div class="children">
+                                <div class="person" onclick="toggleChildren(event, this)">
+                                    <div class="name"><i class="fa-solid fa-person"></i> Mpumela</div>
+                                    <div class="spouse"><i class="fa-solid fa-person-dress"></i> MaKhumalo
+                                        <div class="children">
+                                            <div class="person" onclick="toggleChildren(event, this)">
+                                                <div class="name"><i class="fa-solid fa-person"></i> Mondli</div>
+                                                <div class="name"><i class="fa-solid fa-person"></i> Siyanda</div>
+                                                <div class="name"><i class="fa-solid fa-person-dress"></i> Mananje</div>
+                                                <div class="name"><i class="fa-solid fa-person"></i>Kwanele</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                                                     
+                                </div>
+            
+                                <div class="person" onclick="toggleChildren(event, this)">
+                                    <div class="name"><i class="fa-solid fa-person"></i>Hlabeyakhe
+                                        <div class="children">
+                                            <div class="person" onclick="toggleChildren(event, this)">
+                                                <div class="name"><i class="fa-solid fa-person-dress"></i> MaNgcobo
+                                                    <div class="children">
+                                                        <div class="person" onclick="toggleChildren(event, this)">
+                                                            <div class="name"><i class="fa-solid fa-person-dress"></i> Lindeni</div>
+                                                            <div class="name"><i class="fa-solid fa-person"></i> Smiso</div>
+                                                            <div class="name"><i class="fa-solid fa-person"></i> Bonga</div>
+                                                            <div class="name"><i class="fa-solid fa-person-dress"></i> Busangani</div>
+                                                      
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+        
+                                            <!--Wife 2-->
+                                            <div class="person" onclick="toggleChildren(event, this)">
+                                                <div class="name"><i class="fa-solid fa-person-dress"></i> MaDuma
+                                                    <div class="children">
+                                                        <div class="person" onclick="toggleChildren(event, this)">
+                                                            <div class="name"><i class="fa-solid fa-person"></i> Khetho</div>
+                                                            <div class="name"><i class="fa-solid fa-person"></i> Mkhuliseni</div>
+                                                            <div class="name"><i class="fa-solid fa-person-dress"></i> Busisiwe</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="person" onclick="toggleChildren(event, this)">
+                                                <div class="name"><i class="fa-solid fa-person-dress"></i> MaZondi
+                                                    <div class="children">
+                                                        <div class="person" onclick="toggleChildren(event, this)">
+                                                            <div class="name"><i class="fa-solid fa-person-dress"></i> Nqobi</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                 
+                                </div>
+        
+        
+        
+                            
+                                
+                                
+                            </div>
+                        </div>
+
+                        <!--New family Branch-->
+                        <div class="person" onclick="toggleChildren(event, this)">
+                            <div class="name"><i class="fa-solid fa-person"></i> Mganu</div>
+                            <div class="spouse"><i class="fa-solid fa-person-dress"></i> MaNgobese
+                                <div class="children">
+                                    <div class="person" onclick="toggleChildren(event, this)">
+                                        <div class="name"><i class="fa-solid fa-person-dress"></i>Thembeni</div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleChildren(event, element) {
+            event.stopPropagation(); // Prevent event from bubbling up
+            const childrenDiv = element.querySelector('.children');
+            const spouseDiv = element.querySelector('.spouse');
+            if (childrenDiv) {
+                childrenDiv.style.display = childrenDiv.style.display === 'block' ? 'none' : 'block';
+            }
+            if (spouseDiv) {
+                spouseDiv.style.display = spouseDiv.style.display === 'block' ? 'none' : 'block';
+            }
+        }
+    </script>
+</body>
+</html>
